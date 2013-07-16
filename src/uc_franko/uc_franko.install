@@ -4,15 +4,15 @@
 /**
  * @file
  *
- * Provide functions to install and uninstall the Bitcoin
+ * Provide functions to install and uninstall the Franko
  * module in the database
  */
 
 /**
  * Implementation of hook_schema().
  */
-function uc_bitcoin_schema() {
-	$schema['uc_payment_bitcoin'] = array(
+function uc_franko_schema() {
+	$schema['uc_payment_franko'] = array(
 		'fields'		=>array(
 			'order_id'			=>array(
 				'type'		=>'int',
@@ -20,7 +20,7 @@ function uc_bitcoin_schema() {
 				'not null'	=>TRUE,
 				'default'	=>0,
 			),
-			'bitcoin_address'	=>array(
+			'franko_address'	=>array(
 				'type'		=>'varchar',
 				'length'	=>'50',
 				'not null'	=>TRUE,
@@ -28,7 +28,7 @@ function uc_bitcoin_schema() {
 		),
 		'primary key'	=>array('order_id'),
 		'indexes'		=>array(
-			'bitcoin_address'=>array('bitcoin_address'), ),
+			'franko_address'=>array('franko_address'), ),
 	);
 
 	return $schema;
@@ -37,13 +37,13 @@ function uc_bitcoin_schema() {
 /**
  * Implementation of hook_install().
  */
-function uc_bitcoin_install() {
-	drupal_install_schema('uc_bitcoin');
+function uc_franko_install() {
+	drupal_install_schema('uc_franko');
 }
 
 /**
  * Implementation of hook_uninstall().
  */
-function uc_bitcoin_uninstall() {
-	drupal_uninstall_schema('uc_bitcoin');
+function uc_franko_uninstall() {
+	drupal_uninstall_schema('uc_franko');
 }
