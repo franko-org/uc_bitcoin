@@ -75,7 +75,8 @@ Configuration
 Donate
 ------
 
-* FRK payments: 1DDuMEPaQzdH3vLTiQwQvACgnv7tR25SpE
+* FRK payments: F7dGXokdVJfX1UYoT8FtUHT6aC46vT6JWC
+  http://www.copiamarket.com/franko-faucet/
 
 Authors
 -------
